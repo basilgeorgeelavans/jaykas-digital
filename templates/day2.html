@@ -9,21 +9,21 @@
             class="fa fa-bookmark"></i><span>Frame 01</span> </a> </li>
       <li id="frame02"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe02"> <i
             class="fa fa-bookmark"></i><span>Frame 02</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe03"> <i
+      <li id="frame03"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe03"> <i
             class="fa fa-bookmark"></i><span>Frame 03</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe04"> <i
+      <li id="frame04"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe04"> <i
             class="fa fa-bookmark"></i><span>Frame 04</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe05"> <i
+      <li id="frame05"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe05"> <i
             class="fa fa-bookmark"></i><span>Frame 05</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe06"> <i
+      <li id="frame06"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe06"> <i
             class="fa fa-bookmark"></i><span>Frame 06</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe07"> <i
+      <li id="frame07"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe07"> <i
             class="fa fa-bookmark"></i><span>Frame 07</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe08"> <i
+      <li id="frame08"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe08"> <i
             class="fa fa-bookmark"></i><span>Frame 08</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe09"> <i
+      <li id="frame09"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe09"> <i
             class="fa fa-bookmark"></i><span>Frame 09</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe10"> <i
+      <li id="frame10"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe10"> <i
             class="fa fa-bookmark"></i><span>Frame 10</span> </a> </li>
     </ul>
   </div>
@@ -48,16 +48,9 @@
 
         </div>
         <div class="modal-body">
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
-          <p>hello it is frame 01</p>
+          <video controls width="100%">
+            <source src="{% static 'videos/frame01.mp4'%}" type="video/mp4">
+          </video>
         </div>
         <div class="modal-footer">
           <button type="button" onclick="myFunction()" class="btn btn-primary first" id="next">Next &raquo;</button>
@@ -85,16 +78,9 @@
 
         </div>
         <div class="modal-body">
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
-          <p>hello it is frame 02</p>
+          <video id="demo" controls width="100%">
+            <source src="{% static 'videos/frame01.mp4'%}" type="video/mp4">
+          </video>
         </div>
         <div class="modal-footer">
           <button type="button" onclick="myFunction2()" class="btn btn-primary first" id="next2">Next &raquo;</button>

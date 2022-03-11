@@ -12,6 +12,54 @@ $(document).ready(function() {
     });
    });
 
+   $("#frame03").click(function(){
+    $("#Modalframe03").modal({
+        backdrop: 'static',
+    });
+   });
+
+   $("#frame04").click(function(){
+    $("#Modalframe04").modal({
+        backdrop: 'static',
+    });
+   });
+
+   $("#frame05").click(function(){
+    $("#Modalframe05").modal({
+        backdrop: 'static',
+    });
+   });
+
+   $("#frame06").click(function(){
+    $("#Modalframe06").modal({
+        backdrop: 'static',
+    });
+   });
+
+   $("#frame07").click(function(){
+    $("#Modalframe07").modal({
+        backdrop: 'static',
+    });
+   });
+
+   $("#frame08").click(function(){
+    $("#Modalframe08").modal({
+        backdrop: 'static',
+    });
+   });
+
+   $("#frame09").click(function(){
+    $("#Modalframe09").modal({
+        backdrop: 'static',
+    });
+   });
+
+   $("#frame10").click(function(){
+    $("#Modalframe10").modal({
+        backdrop: 'static',
+    });
+   });
+
     $('#next').click(function() {
       $(this).prop('disabled',true);
       $("#content").show();
@@ -29,7 +77,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next2').prop('disabled', false);
       $("#content2").hide();
-    },1000);
+    },8000);
  });
 
  $('#next3').click(function() {
@@ -39,7 +87,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next3').prop('disabled', false);
       $("#content3").hide();
-    },1000);
+    },8000);
  });
 
  $('#next4').click(function() {
@@ -49,7 +97,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next4').prop('disabled', false);
       $("#content4").hide();
-    },1000);
+    },8000);
  });
 
  $('#next5').click(function() {
@@ -59,7 +107,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next5').prop('disabled', false);
       $("#content5").hide();
-    },1000);
+    },8000);
  });
 
  $('#next6').click(function() {
@@ -69,7 +117,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next6').prop('disabled', false);
       $("#content6").hide();
-    },1000);
+    },8000);
  });
 
  $('#next7').click(function() {
@@ -79,7 +127,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next7').prop('disabled', false);
       $("#content7").hide();
-    },1000);
+    },8000);
  });
 
  $('#next8').click(function() {
@@ -89,7 +137,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next8').prop('disabled', false);
       $("#content8").hide();
-    },1000);
+    },8000);
  });
 
  $('#next9').click(function() {
@@ -99,7 +147,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next9').prop('disabled', false);
       $("#content9").hide();
-    },1000);
+    },8000);
  });
 
  $('#next10').click(function() {
@@ -109,7 +157,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next10').prop('disabled', false);
       $("#content10").hide();
-    },1000);
+    },8000);
  });
 
  $('#next11').click(function() {
@@ -119,7 +167,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next11').prop('disabled', false);
       $("#content11").hide();
-    },1000);
+    },8000);
  });
 
  $('#next12').click(function() {
@@ -129,7 +177,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next12').prop('disabled', false);
       $("#content12").hide();
-    },1000);
+    },8000);
  });
 
  $('#next13').click(function() {
@@ -139,7 +187,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next13').prop('disabled', false);
       $("#content13").hide();
-    },1000);
+    },8000);
  });
 
  $('#next14').click(function() {
@@ -149,7 +197,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next14').prop('disabled', false);
       $("#content14").hide();
-    },1000);
+    },8000);
  });
 
  $('#next15').click(function() {
@@ -159,7 +207,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next15').prop('disabled', false);
       $("#content15").hide();
-    },1000);
+    },8000);
  });
 
  $('#next16').click(function() {
@@ -169,7 +217,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next16').prop('disabled', false);
       $("#content16").hide();
-    },1000);
+    },8000);
  });
 
  $('#next17').click(function() {
@@ -179,7 +227,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next17').prop('disabled', false);
       $("#content17").hide();
-    },1000);
+    },8000);
  });
 
  $('#next18').click(function() {
@@ -189,7 +237,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next19').prop('disabled', false);
       $("#content19").hide();
-    },1000);
+    },8000);
  });
 
 
@@ -200,57 +248,8 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next').prop('disabled', false);
       $("#content").hide();
-    },1000);
+    },8000);
  });
 
- $('#next').click(function() {
-    $(this).prop('disabled',true);
-    $("#content").show();
-
-    setTimeout(function(){
-      $('#next').prop('disabled', false);
-      $("#content").hide();
-    },1000);
- });
-
- $('#next').click(function() {
-    $(this).prop('disabled',true);
-    $("#content").show();
-
-    setTimeout(function(){
-      $('#next').prop('disabled', false);
-      $("#content").hide();
-    },1000);
- });
-
- $('#next').click(function() {
-    $(this).prop('disabled',true);
-    $("#content").show();
-
-    setTimeout(function(){
-      $('#next').prop('disabled', false);
-      $("#content").hide();
-    },1000);
- });
-
- $('#next').click(function() {
-    $(this).prop('disabled',true);
-    $("#content").show();
-
-    setTimeout(function(){
-      $('#next').prop('disabled', false);
-      $("#content").hide();
-    },1000);
- });
-
- $('#next').click(function() {
-    $(this).prop('disabled',true);
-    $("#content").show();
-
-    setTimeout(function(){
-      $('#next').prop('disabled', false);
-      $("#content").hide();
-    },1000);
- });
 
  });

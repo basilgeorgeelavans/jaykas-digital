@@ -3,6 +3,8 @@
   var inc=1;
   document.getElementById("count").innerHTML ="         " + " Viewed :" + (inc) +" times";
   function myFunction() {
+   var x = document.getElementById("demo").autoplay;
+   document.getElementById("demo").innerHTML = x;
      inc=inc+1;
      document.getElementById("count").innerHTML ="         " + " Viewed : " + (inc) + " times";
      if(inc == 5 ) {

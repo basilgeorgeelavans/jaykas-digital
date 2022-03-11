@@ -3,7 +3,8 @@ from oliviaapp import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-path('',views.index, name='index'),
+path('',views.login, name='login'),
+path('index/',views.index, name='index'),
 path('day1/',views.day1, name='day1'),
 path('day2/',views.day2, name='day2'),
 path('day2continues/',views.day2_1, name='day2.1'),
