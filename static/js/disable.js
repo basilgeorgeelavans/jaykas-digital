@@ -67,7 +67,7 @@ $(document).ready(function() {
       setTimeout(function(){
         $('#next').prop('disabled', false);
         $("#content").hide();
-      },1000);
+      },8000);
    });
 
    $('#next2').click(function() {

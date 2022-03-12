@@ -44,22 +44,26 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe02Label">Frame 01</h5>
+          <h5 class="modal-title" id="Modalframe01Label">Frame 01</h5>
 
         </div>
         <div class="modal-body">
-          <video controls width="100%">
+          <video id="complete" controls width="100%">
+            <source src="{% static 'videos/congrats.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo" controls width="100%">
             <source src="{% static 'videos/frame01.mp4'%}" type="video/mp4">
           </video>
-        </div>
-        <div class="modal-footer">
-          <button type="button" onclick="myFunction()" class="btn btn-primary first" id="next">Next &raquo;</button>
-          <p id="count"></p>
           <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
               id="task">Task completed</button></a>
         </div>
-        <div style="display:none;color:rgb(93, 161, 240);margin-left:15px;font-size: 15px;" id="content">
-          <b><img id="hintimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 10 സെക്കൻഡിനു ശേഷം പ്രവർത്തനക്ഷമമാകും.</b>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction()" class="btn btn-primary first" id="next">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 8 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count"></p>
         </div>
         <div id="hint">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -105,7 +109,7 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe01Label">Frame 03</h5>
+          <h5 class="modal-title" id="Modalframe03Label">Frame 03</h5>
         </div>
         <div class="modal-body">
           <p>hello it is frame 03</p>
@@ -124,7 +128,7 @@
           <p id="count3"></p>
           <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" id="task3">Task completed </button></a>
         </div>
-        <div style="display:none;color:rgb(93, 161, 240);margin-left:15px;font-size: 15px;" id="content3">
+        <div style="display:none;color:rgb(93, 161, 240);margin-left:1px;font-size: 15px;" id="content3">
           <b><img id="hintimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 10 സെക്കൻഡിനു ശേഷം പ്രവർത്തനക്ഷമമാകും.</b>
         </div>
         <div id="hint3">
@@ -391,5 +395,4 @@
   </div>
 </div>
 </div>
-
 {% endblock %}

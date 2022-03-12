@@ -1,16 +1,23 @@
 {
   document.getElementById("task").hidden=true;
+  document.getElementById('complete').hidden=true;
   var inc=1;
   document.getElementById("count").innerHTML ="         " + " Viewed :" + (inc) +" times";
   function myFunction() {
-   var x = document.getElementById("demo").autoplay;
-   document.getElementById("demo").innerHTML = x;
+   document.getElementById('myVideo').play();
      inc=inc+1;
      document.getElementById("count").innerHTML ="         " + " Viewed : " + (inc) + " times";
-     if(inc == 5 ) {
+     if(inc == 6 ) {
       document.getElementById("task").hidden=false;
       document.getElementById("next").hidden=true;
       document.getElementById("hint").hidden=true;
+      document.getElementById('myVideo').hidden=true;
+      document.getElementById('myVideo').pause();
+      document.getElementById("count").hidden=true;
+      document.getElementById("content").hidden=true;
+      document.getElementById('complete').hidden=false;
+      document.getElementById('complete').play();
+
      }      
   }
   $("#task").click(function () {
@@ -23,6 +30,7 @@
    document.getElementById("count2").innerHTML ="         " + " Viewed :" + (inc) +" times";
    function myFunction2() {
       inc = inc+1;
+
       document.getElementById("count2").innerHTML ="         " + " Viewed : " + (inc) + " times";
       if(inc == 5 ) {
        document.getElementById("task2").hidden=false;
@@ -158,6 +166,7 @@
     var inc=1;
     document.getElementById("count10").innerHTML ="         " + " Viewed :" + (inc) +" times";
     function myFunction10() {
+      vid.currentTime = 0;
        inc = inc+1;
        document.getElementById("count10").innerHTML ="         " + " Viewed : " + (inc) + " times";
        if(inc == 5 ) {
@@ -170,4 +179,3 @@
     document.location.reload();
     }) 
 }
-

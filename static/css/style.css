@@ -1031,6 +1031,11 @@ height: auto;
   margin-right: 5px; 
   margin-left: 1px;
 }
+#alertimg {
+  max-width: 8%;
+  margin-right: 5px; 
+  margin-left: 1px;
+}
 #next {
   margin-right: 20px;
 }
