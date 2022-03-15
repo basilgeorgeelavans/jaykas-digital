@@ -35,58 +35,51 @@
     </script>
   </body>
   </html> -->
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
-<div class="flex">
-  <div class="text-white bg-dark" style="width: 250px;">
-    <b>Day 02</b>
-    <ul class="nav nav-pills flex-column ">
-      <li id="frame01"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe01"> <i
-            class="fa fa-bookmark"></i><span>Frame 01</span> </a> </li>
-    </ul>
-  </div>
-  <div>
-    <img class="day01" src="{% static 'images/day2.jpg' %}">
-    <div class="flex">
-      <a href="{% url 'index' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s"><i
-          class="fa fa-home"> Back to Homepage</i></a>&nbsp;&nbsp;&nbsp;
-      <a href="{% url 'day2.1' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
-        data-wow-delay="1.1s">Continue... &raquo;</a>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="wrapper">
+    <video class="video">
+        <source src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4" type="video/mp4" />
+    </video>
+  <div class="playpause"></div>
+</div>
+<style>
+  .video {
+    width: 100%;
+    border: 1px solid black;
+}
 
-  <!-- Modal01 -->
-  <div class="modal fade" id="Modalframe01" tabindex="-1" role="dialog" aria-labelledby="Modalframe 01"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe01Label">Frame 01</h5>
+.playpause {
+    background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+    background-repeat:no-repeat;
+    width:50%;
+    height:50%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+</style>
 
-        </div>
-        <div class="modal-body">
-          <video id="complete" controls width="100%">
-            <source src="{% static 'videos/frame01.mp4'%}" type="video/mp4">
-          </video>
-          <video id="myVideo" controls width="100%">
-            <source src="{% static 'videos/frame01.mp4'%}" type="video/mp4">
-          </video>
-          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-              id="task">Task completed</button></a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" onclick="myFunction()" class="btn btn-primary first" id="next">Next &raquo;</button>
-          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content">
-            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 8 സെക്കന്റുകൾക്ക് ശേഷം
-              പ്രവർത്തനക്ഷമമാകും.</b>
-          </div>
-          <p id="count"></p>
-        </div>
-        <div id="hint">
-          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endblock %}
+<script>
+  $('.video').parent().click(function () {
+  if($(this).children(".video").get(0).paused){        $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
+    }else{       $(this).children(".video").get(0).pause();
+  $(this).children(".playpause").fadeIn();
+    }
+});
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 {% block content %}
 <div class="header">
     <div class="flexbox">
-        <img src="{% static 'images/jklogo.png' %}">
+        <img src="{% static 'images/jklogos.png' %}">
         <h1>Jaykas Digital</h1>
         <a class="main-btn wow fadeInUp logout" data-wow-duration="1.3s" data-wow-delay="1.1s" href="{% url 'login' %}"> Logout</a>
     </div>
@@ -14,7 +14,7 @@
 </div>
 <br>
 <div class="flex">
-    <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Day 01</a>&nbsp
+    <a href="{% url 'day1' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Day 01</a>&nbsp
     <a href="{% url 'day2' %}" id="day2" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Day
         02</a>&nbsp
     <a href="{% url 'day3' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Day

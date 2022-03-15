@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $("#frame01").click(function(){
     $("#Modalframe01").modal({
         backdrop: 'static',
@@ -77,7 +76,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next2').prop('disabled', false);
       $("#content2").hide();
-    },8000);
+    },13000);
  });
 
  $('#next3').click(function() {
@@ -87,7 +86,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next3').prop('disabled', false);
       $("#content3").hide();
-    },8000);
+    },10000);
  });
 
  $('#next4').click(function() {
@@ -97,7 +96,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next4').prop('disabled', false);
       $("#content4").hide();
-    },8000);
+    },6000);
  });
 
  $('#next5').click(function() {
@@ -127,7 +126,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next7').prop('disabled', false);
       $("#content7").hide();
-    },8000);
+    },9000);
  });
 
  $('#next8').click(function() {
@@ -147,7 +146,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next9').prop('disabled', false);
       $("#content9").hide();
-    },8000);
+    },7000);
  });
 
  $('#next10').click(function() {
@@ -157,7 +156,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('#next10').prop('disabled', false);
       $("#content10").hide();
-    },8000);
+    },9000);
  });
 
  $('#next11').click(function() {

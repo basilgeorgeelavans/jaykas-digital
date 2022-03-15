@@ -1044,8 +1044,22 @@ height: auto;
   cursor: pointer;
     }
 
-
-
+  .playpause {
+    background-image:url(../images/playbutton.png);
+    background-repeat:no-repeat;
+    width:30%;
+    height:30%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+  }
 
 
 
