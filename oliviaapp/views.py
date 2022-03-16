@@ -20,6 +20,9 @@ def day2_1(request):
 def day3(request):
     return render (request,'day3.html')
 
+def day3_1(request):
+    return render (request,'day3.1.html')
+
 def day4(request):
     return render (request,'day4.html')
 

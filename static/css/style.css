@@ -993,39 +993,76 @@ b::first-letter {
 .nav-link:hover .fa {
   transform: rotate(360deg)
 }
-
-.first {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.first .firsttext {
-  visibility: hidden;
-  width: 220px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(235, 11, 11);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.first:hover .firsttext {
-  visibility: visible;
-}
-
-.day01 {
-max-width: 100%;
+.days {
+margin-left: 5px;
+max-width: 99%;
 height: auto;
 }
-#hint {
+.days_1 {
+  margin-left: 5px;
+  max-width: 100%;
+  height: auto;
+  }
+#d2hint {
  font-size: 15px;
  color:#e01f11;
 }
+#d2hint2 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint3 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint4 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint5 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint6 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint7 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint8 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint9 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint10 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint11 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint12 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint13 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint14 {
+  font-size: 15px;
+  color:#e01f11;
+ }
+ #d2hint15 {
+  font-size: 15px;
+  color:#e01f11;
+ }
 #hintimg {
   max-width: 4%;
   margin-right: 5px; 
@@ -1036,31 +1073,136 @@ height: auto;
   margin-right: 5px; 
   margin-left: 1px;
 }
-#next {
+#d2next {
   margin-right: 20px;
+}
+#d2next:disabled {
+  cursor:not-allowed;
+}
+#d2next2 {
+  margin-right: 20px;
+}
+#d2next2:disabled {
+  cursor:not-allowed;
+}
+#d2next3 {
+  margin-right: 20px;
+}
+#d2next3:disabled {
+  cursor:not-allowed;
+}
+#d2next4 {
+  margin-right: 20px;
+}
+#d2next4:disabled {
+  cursor:not-allowed;
+}
+#d2next5 {
+  margin-right: 20px;
+}
+#d2next5:disabled {
+  cursor:not-allowed;
+}
+#d2next56 {
+  margin-right: 20px;
+}
+#d2next6:disabled {
+  cursor:not-allowed;
+}
+#d2next7 {
+  margin-right: 20px;
+}
+#d2next7:disabled {
+  cursor:not-allowed;
+}
+#d2next8 {
+  margin-right: 20px;
+}
+#d2next8:disabled {
+  cursor:not-allowed;
+}
+#d2next9 {
+  margin-right: 20px;
+}
+#d2next9:disabled {
+  cursor:not-allowed;
+}
+#d2next10 {
+  margin-right: 20px;
+}
+#d2next10:disabled {
+  cursor:not-allowed;
+}
+#d2next11 {
+  margin-right: 20px;
+}
+#d2next11:disabled {
+  cursor:not-allowed;
+}
+#d2next12 {
+  margin-right: 20px;
+}
+#d2next12:disabled {
+  cursor:not-allowed;
+}
+#d2next13 {
+  margin-right: 20px;
+}
+#d2next13:disabled {
+  cursor:not-allowed;
+}
+#d2next14 {
+  margin-right: 20px;
+}
+#d2next14:disabled {
+  cursor:not-allowed;
+}
+#d2next15 {
+  margin-right: 20px;
+}
+#d2next15:disabled {
+  cursor:not-allowed;
+}
+#d2next16 {
+  margin-right: 20px;
+}
+#d2next16:disabled {
+  cursor:not-allowed;
+}
+#d2next17 {
+  margin-right: 20px;
+}
+#d2next17:disabled {
+  cursor:not-allowed;
 }
 #day2 {
   position: relative;
   cursor: pointer;
     }
 
-  .playpause {
-    background-image:url(../images/playbutton.png);
-    background-repeat:no-repeat;
-    width:30%;
-    height:30%;
-    position:absolute;
-    left:0%;
-    right:0%;
-    top:0%;
-    bottom:0%;
-    margin:auto;
-    background-size:contain;
-    background-position: center;
-    text-align: center;
-    color: #ffffff;
-  }
-
+.playpause {
+  background-image:url(../images/playbutton.png);
+  background-repeat:no-repeat;
+  width:30%;
+  height:30%;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.playpause:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); 
+}
+ 
 
 
 

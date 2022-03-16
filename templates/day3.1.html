@@ -1,0 +1,308 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="flex">
+  <div class="text-white bg-dark" style="width: 250px;">
+    <b>Day 03 continues...</b>
+    <ul class="nav nav-pills flex-column ">
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe11"> <i
+            class="fa fa-bookmark"></i><span>frame 11</span> </a> </li>
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe12"> <i
+            class="fa fa-bookmark"></i><span>frame 12</span> </a> </li>
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe13"> <i
+            class="fa fa-bookmark"></i><span>frame 13</span> </a> </li>
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe14"> <i
+            class="fa fa-bookmark"></i><span>frame 14</span> </a> </li>
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe15"> <i
+            class="fa fa-bookmark"></i><span>frame 15</span> </a> </li>
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe16"> <i
+            class="fa fa-bookmark"></i><span>frame 16</span> </a> </li>
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe17"> <i
+            class="fa fa-bookmark"></i><span>frame 17</span> </a> </li>
+      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe18"> <i
+            class="fa fa-bookmark"></i><span>frame 18</span> </a> </li>
+    </ul>
+  </div>
+  <div>
+    <img class="days_1" src="{% static 'images/day3.1.jpg' %}">
+    <div class="flex">
+      <a href="{% url 'day3' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">&laquo;
+        Back to Previouspage</a>&nbsp;&nbsp;&nbsp;
+      <a href="{% url 'index' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s"
+        id="frame1">Day 03 completed</a>
+    </div>
+  </div>
+  <!-- Modal11 -->
+  <div class="modal fade" id="Modalframe11" tabindex="-1" role="dialog" aria-labelledby="Modalframe 11"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe11Label">Frame 11</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete11" controls width="100%">
+            <source src="{% static 'videos/day03/frame11end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo11" controls width="100%">
+            <source src="{% static 'videos/day03/frame11.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause11" onclick="playpau11()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="task11">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction11()" class="btn btn-primary first" id="d3next11">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content11">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count11"></p>
+        </div>
+        <div id="hint11">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal12 -->
+  <div class="modal fade" id="Modalframe12" tabindex="-1" role="dialog" aria-labelledby="Modalframe 12"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe12Label">Frame 12</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete12" controls width="100%">
+            <source src="{% static 'videos/day03/frame12end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo12" controls width="100%">
+            <source src="{% static 'videos/day03/frame12.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause12" onclick="playpau12()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="task12">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction12()" class="btn btn-primary first" id="d3next12">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content12">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count12"></p>
+        </div>
+        <div id="hint12">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal13 -->
+  <div class="modal fade" id="Modalframe13" tabindex="-1" role="dialog" aria-labelledby="Modalframe 13"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe13Label">Frame 13</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete13" controls width="100%">
+            <source src="{% static 'videos/day03/frame13end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo13" controls width="100%">
+            <source src="{% static 'videos/day03/frame13.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause13" onclick="playpau13()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="task13">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction13()" class="btn btn-primary first" id="d3next13">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content13">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count13"></p>
+        </div>
+        <div id="hint13">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal14 -->
+  <div class="modal fade" id="Modalframe14" tabindex="-1" role="dialog" aria-labelledby="Modalframe 14"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe14Label">Frame 14</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete14" controls width="100%">
+            <source src="{% static 'videos/day03/frame14end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo14" controls width="100%">
+            <source src="{% static 'videos/day03/frame14.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause14" onclick="playpau14()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="task14">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction14()" class="btn btn-primary first" id="d3next14">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content14">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 10 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count14"></p>
+        </div>
+        <div id="hint14">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal15 -->
+  <div class="modal fade" id="Modalframe15" tabindex="-1" role="dialog" aria-labelledby="Modalframe 15"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe15Label">Frame 15</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete15" controls width="100%">
+            <source src="{% static 'videos/day03/frame15end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo15" controls width="100%">
+            <source src="{% static 'videos/day03/frame15.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause15" onclick="playpau15()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="task15">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction15()" class="btn btn-primary first" id="d3next15">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content15">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 17 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count15"></p>
+        </div>
+        <div id="hint15">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal16 -->
+  <div class="modal fade" id="Modalframe16" tabindex="-1" role="dialog" aria-labelledby="Modalframe 16"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe16Label">Frame 16</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete16" controls width="100%">
+            <source src="{% static 'videos/day03/frame16end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo16" controls width="100%">
+            <source src="{% static 'videos/day03/frame16.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause16" onclick="playpau16()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary" data-dismiss="modal"
+              id="task16">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction16()" class="btn btn-primary" id="d3next16">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content16">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 17 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count16"></p>
+        </div>
+        <div id="hint16">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal17 -->
+  <div class="modal fade" id="Modalframe17" tabindex="-1" role="dialog" aria-labelledby="Modalframe 17"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe17Label">Frame 17</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete17" controls width="100%">
+            <source src="{% static 'videos/day03/frame17end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo17" controls width="100%">
+            <source src="{% static 'videos/day03/frame17.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause17" onclick="playpau17()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="task17">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction17()" class="btn btn-primary first" id="d3next17">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content17">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 16 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count17"></p>
+        </div>
+        <div id="hint17">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal18 -->
+  <div class="modal fade" id="Modalframe18" tabindex="-1" role="dialog" aria-labelledby="Modalframe 18"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modalframe18Label">Frame 18</h5>
+
+        </div>
+        <div class="modal-body">
+          <video id="complete18" controls width="100%">
+            <source src="{% static 'videos/day03/frame18end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="myVideo18" controls width="100%">
+            <source src="{% static 'videos/day03/frame18.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="playpause18" onclick="playpau18()"></div>
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="task18">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="myFunction18()" class="btn btn-primary first" id="d3next18">Next &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content18">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 15 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="count18"></p>
+        </div>
+        <div id="hint18">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {% endblock %}
