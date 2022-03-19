@@ -5,25 +5,25 @@
   <div class="text-white bg-dark" style="width: 250px;">
     <b>Day 03</b>
     <ul class="nav nav-pills flex-column ">
-      <li id="frame01"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe01"> <i
+      <li id="frame01"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe01"> <i
             class="fa fa-bookmark"></i><span>Frame 01</span> </a> </li>
-      <li id="frame02"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe02"> <i
+      <li id="frame02"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe02"> <i
             class="fa fa-bookmark"></i><span>Frame 02</span> </a> </li>
-      <li id="frame03"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe03"> <i
+      <li id="frame03"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe03"> <i
             class="fa fa-bookmark"></i><span>Frame 03</span> </a> </li>
-      <li id="frame04"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe04"> <i
+      <li id="frame04"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe04"> <i
             class="fa fa-bookmark"></i><span>Frame 04</span> </a> </li>
-      <li id="frame05"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe05"> <i
+      <li id="frame05"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe05"> <i
             class="fa fa-bookmark"></i><span>Frame 05</span> </a> </li>
-      <li id="frame06"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe06"> <i
+      <li id="frame06"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe06"> <i
             class="fa fa-bookmark"></i><span>Frame 06</span> </a> </li>
-      <li id="frame07"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe07"> <i
+      <li id="frame07"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe07"> <i
             class="fa fa-bookmark"></i><span>Frame 07</span> </a> </li>
-      <li id="frame08"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe08"> <i
+      <li id="frame08"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe08"> <i
             class="fa fa-bookmark"></i><span>Frame 08</span> </a> </li>
-      <li id="frame09"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe09"> <i
+      <li id="frame09"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe09"> <i
             class="fa fa-bookmark"></i><span>Frame 09</span> </a> </li>
-      <li id="frame10"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe10"> <i
+      <li id="frame10"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d3Modalframe10"> <i
             class="fa fa-bookmark"></i><span>Frame 10</span> </a> </li>
     </ul>
   </div>
@@ -37,34 +37,34 @@
     </div>
   </div>
 
-
   <!-- Modal01 -->
-  <div class="modal fade" id="Modalframe01" tabindex="-1" role="dialog" aria-labelledby="Modalframe 01"
+  <div class="modal fade" id="d3Modalframe01" tabindex="-1" role="dialog" aria-labelledby="d3Modalframe 01"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe01Label">Frame 01</h5>
-
+          <h5 class="modal-title" id="d3Modalframe01Label">Frame 01</h5>
         </div>
         <div class="modal-body">
-          <video id="complete" controls width="100%">
+          <video id="d3complete" controls width="100%">
             <source src="{% static 'videos/day03/frame01end.mp4'%}" type="video/mp4">
           </video>
-          <video id="myVideo" controls width="100%">
+          <video id="d3myVideo" controls width="100%">
             <source src="{% static 'videos/day03/frame01.mp4'%}" type="video/mp4">
           </video>
-          <div class="playpause" id="playpause" onclick="playpau()"></div>
+          <div class="playpause" id="d3playpause" onclick="d3playpau()"></div>
           <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-              id="task">Task completed</button></a>
+              id="d3task">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="myFunction()" class="btn btn-primary first" id="d3next">Next &raquo;</button>
+          <button type="button" onclick="d3myFunction()" class="btn btn-primary first" id="d3next">Next &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 10 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="count"></p>
+          <a href="#"><img id="d2doubtimg" data-toggle="modal" data-target="#d2doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="hint">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -80,7 +80,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe02Label">Frame 02</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete2" controls width="100%">
@@ -108,7 +107,6 @@
     </div>
   </div>
 
-
   <!-- Modal03 -->
   <div class="modal fade" id="Modalframe03" tabindex="-1" role="dialog" aria-labelledby="Modalframe 03"
     aria-hidden="true">
@@ -116,7 +114,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe03Label">Frame 03</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete3" controls width="100%">
@@ -144,7 +141,6 @@
     </div>
   </div>
 
-
   <!-- Modal04 -->
   <div class="modal fade" id="Modalframe04" tabindex="-1" role="dialog" aria-labelledby="Modalframe 04"
     aria-hidden="true">
@@ -152,7 +148,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe04Label">Frame 04</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete4" controls width="100%">
@@ -180,7 +175,6 @@
     </div>
   </div>
 
-
   <!-- Modal05 -->
   <div class="modal fade" id="Modalframe05" tabindex="-1" role="dialog" aria-labelledby="Modalframe 05"
     aria-hidden="true">
@@ -188,7 +182,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe05Label">Frame 05</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete5" controls width="100%">
@@ -223,7 +216,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe06Label">Frame 06</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete6" controls width="100%">
@@ -258,7 +250,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe07Label">Frame 07</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete7" controls width="100%">
@@ -293,7 +284,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe08Label">Frame 08</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete8" controls width="100%">
@@ -328,7 +318,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe09Label">Frame 09</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete9" controls width="100%">
@@ -363,7 +352,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe10Label">Frame 10</h5>
-
         </div>
         <div class="modal-body">
           <video id="complete10" controls width="100%">
@@ -377,7 +365,8 @@
               id="task10">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="myFunction10()" class="btn btn-primary first" id="d3next10">Next &raquo;</button>
+          <button type="button" onclick="myFunction10()" class="btn btn-primary first" id="d3next10">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content10">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 12 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
@@ -387,6 +376,27 @@
         <div id="hint10">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- D2Doubt Modal -->
+<div class="modal fade" id="d2doubtModalframe" tabindex="-1" role="dialog" aria-labelledby="d2doubtModalframe"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d2doubtModalframe10Label">Do You Have Any Doubt?</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST" enctype="multipart/form-data" id="form_id"></form>
+        <div class="form-group">
+          <h5><label for="inputMessage">Message:</label></h5>
+          <textarea class="form-control" placeholder="Write your message" rows="8" cols="30" required></textarea>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
       </div>
     </div>
   </div>

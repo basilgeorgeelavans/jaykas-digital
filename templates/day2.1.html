@@ -5,22 +5,18 @@
   <div class="text-white bg-dark" style="width: 250px;">
     <b>Day 02 continues...</b>
     <ul class="nav nav-pills flex-column ">
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe11"> <i
+      <li id="frame11"> <a href="" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe11"> <i
             class="fa fa-bookmark"></i><span>frame 11</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe12"> <i
+      <li id="frame12"> <a href="" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe12"> <i
             class="fa fa-bookmark"></i><span>frame 12</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe13"> <i
+      <li id="frame13"> <a href="" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe13"> <i
             class="fa fa-bookmark"></i><span>frame 13</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe14"> <i
+      <li id="frame14"> <a href="" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe14"> <i
             class="fa fa-bookmark"></i><span>frame 14</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe15"> <i
+      <li id="frame15"> <a href="" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe15"> <i
             class="fa fa-bookmark"></i><span>frame 15</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe16"> <i
+      <li id="frame16"> <a href="" class="nav-link text-white" data-toggle="modal" data-target="#d2endframe"> <i
             class="fa fa-bookmark"></i><span>frame 16</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe17"> <i
-            class="fa fa-bookmark"></i><span>frame 17</span> </a> </li>
-      <li> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe18"> <i
-            class="fa fa-bookmark"></i><span>frame 18</span> </a> </li>
     </ul>
   </div>
   <div>
@@ -33,13 +29,12 @@
     </div>
   </div>
   <!-- Modal11 -->
-  <div class="modal fade" id="Modalframe11" tabindex="-1" role="dialog" aria-labelledby="Modalframe 11"
+  <div class="modal fade" id="d2Modalframe11" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 11"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe11Label">Frame 11</h5>
-
+          <h5 class="modal-title" id="d2Modalframe11Label">Frame 11</h5>
         </div>
         <div class="modal-body">
           <video id="d2complete11" controls width="100%">
@@ -53,12 +48,15 @@
               id="d2task11">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction11()" class="btn btn-primary first" id="d2next11">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction11()" class="btn btn-primary first" id="d2next11">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content11">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 9 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count11"></p>
+          <a href="#"><img id="d2doubtimg11" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint11">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -67,13 +65,12 @@
     </div>
   </div>
   <!-- Modal12 -->
-  <div class="modal fade" id="Modalframe12" tabindex="-1" role="dialog" aria-labelledby="Modalframe 12"
+  <div class="modal fade" id="d2Modalframe12" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 12"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe12Label">Frame 12</h5>
-
         </div>
         <div class="modal-body">
           <video id="d2complete12" controls width="100%">
@@ -87,12 +84,15 @@
               id="d2task12">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction12()" class="btn btn-primary first" id="d2next12">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction12()" class="btn btn-primary first" id="d2next12">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content12">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count12"></p>
+          <a href="#"><img id="d2doubtimg12" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint12">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -101,13 +101,12 @@
     </div>
   </div>
   <!-- Modal13 -->
-  <div class="modal fade" id="Modalframe13" tabindex="-1" role="dialog" aria-labelledby="Modalframe 13"
+  <div class="modal fade" id="d2Modalframe13" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 13"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe13Label">Frame 13</h5>
-
         </div>
         <div class="modal-body">
           <video id="d2complete13" controls width="100%">
@@ -121,27 +120,29 @@
               id="d2task13">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction13()" class="btn btn-primary first" id="d2next13">Next &raquo;</button>
-          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content13">
+          <button type="button" onclick="d2myFunction13()" class="btn btn-primary first" id="d2next13">Next
+            &raquo;</button>
+          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content13">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 10 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
-          <p id="count13"></p>
+          <p id="d2count13"></p>
+          <a href="#"><img id="d2doubtimg13" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
-        <div id="hint13">
+        <div id="d2hint13">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
         </div>
       </div>
     </div>
   </div>
   <!-- Modal14 -->
-  <div class="modal fade" id="Modalframe14" tabindex="-1" role="dialog" aria-labelledby="Modalframe 14"
+  <div class="modal fade" id="d2Modalframe14" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 14"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe14Label">Frame 14</h5>
-
         </div>
         <div class="modal-body">
           <video id="d2complete14" controls width="100%">
@@ -155,12 +156,15 @@
               id="d2task14">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction14()" class="btn btn-primary first" id="d2next14">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction14()" class="btn btn-primary first" id="d2next14">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content14">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 10 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count14"></p>
+          <a href="#"><img id="d2doubtimg14" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint14">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -169,13 +173,12 @@
     </div>
   </div>
   <!-- Modal15 -->
-  <div class="modal fade" id="Modalframe15" tabindex="-1" role="dialog" aria-labelledby="Modalframe 15"
+  <div class="modal fade" id="d2Modalframe15" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 15"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Modalframe15Label">Frame 15</h5>
-
         </div>
         <div class="modal-body">
           <video id="d2complete15" controls width="100%">
@@ -189,12 +192,15 @@
               id="d2task15">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction15()" class="btn btn-primary first" id="d2next15">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction15()" class="btn btn-primary first" id="d2next15">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content15">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 8 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count15"></p>
+          <a href="#"><img id="d2doubtimg15" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint15">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -202,107 +208,44 @@
       </div>
     </div>
   </div>
-  <!-- Modal16 -->
-  <div class="modal fade" id="Modalframe16" tabindex="-1" role="dialog" aria-labelledby="Modalframe 16"
-    aria-hidden="true">
+  <!-- d2endframe -->
+  <div class="modal fade" id="d2endframe" tabindex="-1" role="dialog" aria-labelledby="d2endframe" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe16Label">Frame 16</h5>
-
+          <h5 class="modal-title" id="d2endframe">Day 02 End</h5>
         </div>
         <div class="modal-body">
-          <video id="d2complete16" controls width="100%">
-            <source src="{% static 'videos/day02/frame16end.mp4'%}" type="video/mp4">
-          </video>
           <video id="d2myVideo16" controls width="100%">
             <source src="{% static 'videos/day02/frame16.mp4'%}" type="video/mp4">
           </video>
           <div class="playpause" id="d2playpause16" onclick="d2playpau16()"></div>
-          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary" data-dismiss="modal"
-              id="d2task16">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction16()" class="btn btn-primary" id="d2next16">Next &raquo;</button>
-          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="content16">
-            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 9 സെക്കന്റുകൾക്ക് ശേഷം
-              പ്രവർത്തനക്ഷമമാകും.</b>
-          </div>
-          <p id="d2count16"></p>
-        </div>
-        <div id="d2hint16">
-          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal17 -->
-  <div class="modal fade" id="Modalframe17" tabindex="-1" role="dialog" aria-labelledby="Modalframe 17"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe17Label">Frame 17</h5>
-
-        </div>
-        <div class="modal-body">
-          <video id="d2complete17" controls width="100%">
-            <source src="{% static 'videos/day02/frame17end.mp4'%}" type="video/mp4">
-          </video>
-          <video id="d2myVideo17" controls width="100%">
-            <source src="{% static 'videos/day02/frame17.mp4'%}" type="video/mp4">
-          </video>
-          <div class="playpause" id="d2playpause17" onclick="d2playpau17()"></div>
           <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-              id="d2task17">Task completed</button></a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" onclick="d2myFunction17()" class="btn btn-primary first" id="d2next17">Next &raquo;</button>
-          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content17">
-            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 9 സെക്കന്റുകൾക്ക് ശേഷം
-              പ്രവർത്തനക്ഷമമാകും.</b>
-          </div>
-          <p id="d2count17"></p>
-        </div>
-        <div id="d2hint17">
-          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
+              id="d2task16">Close</button></a>
         </div>
       </div>
     </div>
   </div>
-  <!-- Modal18 -->
-  <div class="modal fade" id="Modalframe18" tabindex="-1" role="dialog" aria-labelledby="Modalframe 18"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe18Label">Frame 18</h5>
-
+</div>
+<!-- D2Doubt Modal -->
+<div class="modal fade" id="d2doubtModalframe" tabindex="-1" role="dialog" aria-labelledby="d2doubtModalframe"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d2doubtModalframe10Label">Do You Have Any Doubt?</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST" enctype="multipart/form-data" id="form_id"></form>
+        <div class="form-group">
+          <textarea class="form-control" placeholder="Write your message" rows="5" cols="50" required></textarea>
         </div>
-        <div class="modal-body">
-          <video id="d2complete18" controls width="100%">
-            <source src="{% static 'videos/day02/frame18end.mp4'%}" type="video/mp4">
-          </video>
-          <video id="d2myVideo18" controls width="100%">
-            <source src="{% static 'videos/day02/frame18.mp4'%}" type="video/mp4">
-          </video>
-          <div class="playpause" id="d2playpause18" onclick="d2playpau18()"></div>
-          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-              id="task18">Task completed</button></a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" onclick="d2myFunction18()" class="btn btn-primary first" id="d2next18">Next &raquo;</button>
-          <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content18">
-            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 9 സെക്കന്റുകൾക്ക് ശേഷം
-              പ്രവർത്തനക്ഷമമാകും.</b>
-          </div>
-          <p id="d2count18"></p>
-        </div>
-        <div id="d2hint18">
-          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-        </div>
+        <button type="submit" name="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
       </div>
     </div>
   </div>
-  </div>
-  {% endblock %}
+</div>
+{% endblock %}

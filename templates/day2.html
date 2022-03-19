@@ -5,25 +5,27 @@
   <div class="text-white bg-dark" style="width: 250px;">
     <b>Day 02</b>
     <ul class="nav nav-pills flex-column ">
-      <li id="frame01"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe01"> <i
+      <li id="frame00"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe00"> <i
+            class="fa fa-bookmark"></i><span>Frame 00</span> </a> </li>
+      <li id="frame01"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe01"> <i
             class="fa fa-bookmark"></i><span>Frame 01</span> </a> </li>
-      <li id="frame02"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe02"> <i
+      <li id="frame02"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe02"> <i
             class="fa fa-bookmark"></i><span>Frame 02</span> </a> </li>
-      <li id="frame03"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe03"> <i
+      <li id="frame03"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe03"> <i
             class="fa fa-bookmark"></i><span>Frame 03</span> </a> </li>
-      <li id="frame04"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe04"> <i
+      <li id="frame04"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe04"> <i
             class="fa fa-bookmark"></i><span>Frame 04</span> </a> </li>
-      <li id="frame05"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe05"> <i
+      <li id="frame05"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe05"> <i
             class="fa fa-bookmark"></i><span>Frame 05</span> </a> </li>
-      <li id="frame06"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe06"> <i
+      <li id="frame06"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe06"> <i
             class="fa fa-bookmark"></i><span>Frame 06</span> </a> </li>
-      <li id="frame07"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe07"> <i
+      <li id="frame07"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe07"> <i
             class="fa fa-bookmark"></i><span>Frame 07</span> </a> </li>
-      <li id="frame08"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe08"> <i
+      <li id="frame08"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe08"> <i
             class="fa fa-bookmark"></i><span>Frame 08</span> </a> </li>
-      <li id="frame09"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe09"> <i
+      <li id="frame09"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe09"> <i
             class="fa fa-bookmark"></i><span>Frame 09</span> </a> </li>
-      <li id="frame10"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#Modalframe10"> <i
+      <li id="frame10"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d2Modalframe10"> <i
             class="fa fa-bookmark"></i><span>Frame 10</span> </a> </li>
     </ul>
   </div>
@@ -37,15 +39,35 @@
     </div>
   </div>
 
-
-  <!-- Modal01 -->
-  <div class="modal fade" id="Modalframe01" tabindex="-1" role="dialog" aria-labelledby="Modalframe 01"
+  <!-- Modal00 -->
+  <div class="modal fade" id="d2Modalframe00" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 00"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe01Label">Frame 01</h5>
+          <h5 class="modal-title" id="d2Modalframe00Label">Day 02 Start</h5>
+        </div>
+        <div class="modal-body">
+          <video id="d2myVideo00" controls width="100%">
+            <source src="{% static 'videos/day02/frame00.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="d2playpause00" onclick="d2playpau00()"></div>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="d2task00">Close</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal01 -->
+  <div class="modal fade" id="d2Modalframe01" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 01"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="d2Modalframe01Label">Frame 01</h5>
         </div>
         <div class="modal-body">
           <video id="d2complete" controls width="100%">
@@ -59,12 +81,14 @@
               id="d2task">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction()" class="btn btn-primary first" id="d2next">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction()" class="btn btn-primary" id="d2next">Next &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 8 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count"></p>
+          <a href="#"><img id="d2doubtimg" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -74,12 +98,12 @@
   </div>
 
   <!-- Modal02 -->
-  <div class="modal fade" id="Modalframe02" tabindex="-1" role="dialog" aria-labelledby="Modalframe 02"
+  <div class="modal fade" id="d2Modalframe02" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 02"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe02Label">Frame 02</h5>
+          <h5 class="modal-title" id="d2Modalframe02Label">Frame 02</h5>
 
         </div>
         <div class="modal-body">
@@ -94,12 +118,15 @@
               id="d2task2">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction2()" class="btn btn-primary first" id="d2next2">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction2()" class="btn btn-primary first" id="d2next2">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content2">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count2"></p>
+          <a href="#"><img id="d2doubtimg2" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint2">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -110,12 +137,12 @@
 
 
   <!-- Modal03 -->
-  <div class="modal fade" id="Modalframe03" tabindex="-1" role="dialog" aria-labelledby="Modalframe 03"
+  <div class="modal fade" id="d2Modalframe03" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 03"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe03Label">Frame 03</h5>
+          <h5 class="modal-title" id="d2Modalframe03Label">Frame 03</h5>
 
         </div>
         <div class="modal-body">
@@ -125,17 +152,20 @@
           <video id="d2myVideo3" controls width="100%">
             <source src="{% static 'videos/day02/frame03.mp4'%}" type="video/mp4">
           </video>
-          <div class="playpause" id="d2playpause3" onclick="playpau3()"></div>
+          <div class="playpause" id="d2playpause3" onclick="d2playpau3()"></div>
           <a href="{% url 'day2' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
               id="d2task3">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="myFunction3()" class="btn btn-primary first" id="d2next3">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction3()" class="btn btn-primary first" id="d2next3">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content3">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 10 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count3"></p>
+          <a href="#"><img id="d2doubtimg3" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint3">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -146,12 +176,12 @@
 
 
   <!-- Modal04 -->
-  <div class="modal fade" id="Modalframe04" tabindex="-1" role="dialog" aria-labelledby="Modalframe 04"
+  <div class="modal fade" id="d2Modalframe04" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 04"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe04Label">Frame 04</h5>
+          <h5 class="modal-title" id="d2Modalframe04Label">Frame 04</h5>
 
         </div>
         <div class="modal-body">
@@ -166,12 +196,15 @@
               id="d2task4">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction4()" class="btn btn-primary first" id="d2next4">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction4()" class="btn btn-primary first" id="d2next4">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content4">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 6 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count4"></p>
+          <a href="#"><img id="d2doubtimg4" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint4">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -182,12 +215,12 @@
 
 
   <!-- Modal05 -->
-  <div class="modal fade" id="Modalframe05" tabindex="-1" role="dialog" aria-labelledby="Modalframe 05"
+  <div class="modal fade" id="d2Modalframe05" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 05"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe05Label">Frame 05</h5>
+          <h5 class="modal-title" id="d2Modalframe05Label">Frame 05</h5>
 
         </div>
         <div class="modal-body">
@@ -202,12 +235,15 @@
               id="d2task5">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction5()" class="btn btn-primary first" id="d2next5">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction5()" class="btn btn-primary first" id="d2next5">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content5">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 8 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count5"></p>
+          <a href="#"><img id="d2doubtimg5" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint5">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -217,12 +253,12 @@
   </div>
 
   <!-- Modal06 -->
-  <div class="modal fade" id="Modalframe06" tabindex="-1" role="dialog" aria-labelledby="Modalframe 06"
+  <div class="modal fade" id="d2Modalframe06" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 06"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe06Label">Frame 06</h5>
+          <h5 class="modal-title" id="d2Modalframe06Label">Frame 06</h5>
 
         </div>
         <div class="modal-body">
@@ -237,12 +273,15 @@
               id="d2task6">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction6()" class="btn btn-primary first" id="d2next6">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction6()" class="btn btn-primary first" id="d2next6">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content6">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 8 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count6"></p>
+          <a href="#"><img id="d2doubtimg6" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint6">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -252,12 +291,12 @@
   </div>
 
   <!-- Modal07 -->
-  <div class="modal fade" id="Modalframe07" tabindex="-1" role="dialog" aria-labelledby="Modalframe 07"
+  <div class="modal fade" id="d2Modalframe07" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 07"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe07Label">Frame 07</h5>
+          <h5 class="modal-title" id="d2Modalframe07Label">Frame 07</h5>
 
         </div>
         <div class="modal-body">
@@ -272,12 +311,15 @@
               id="d2task7">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction7()" class="btn btn-primary first" id="d2next7">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction7()" class="btn btn-primary first" id="d2next7">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content7">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 9 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count7"></p>
+          <a href="#"><img id="d2doubtimg7" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint7">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -287,7 +329,7 @@
   </div>
 
   <!-- Modal08 -->
-  <div class="modal fade" id="Modalframe08" tabindex="-1" role="dialog" aria-labelledby="Modalframe 08"
+  <div class="modal fade" id="d2Modalframe08" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 08"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -313,6 +355,8 @@
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count8"></p>
+          <a href="#"><img id="d2doubtimg8" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint8">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -322,12 +366,12 @@
   </div>
 
   <!-- Modal09 -->
-  <div class="modal fade" id="Modalframe09" tabindex="-1" role="dialog" aria-labelledby="Modalframe 09"
+  <div class="modal fade" id="d2Modalframe09" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 09"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modalframe09Label">Frame 09</h5>
+          <h5 class="modal-title" id="d2Modalframe09Label">Frame 09</h5>
 
         </div>
         <div class="modal-body">
@@ -342,12 +386,15 @@
               id="d2task9">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction9()" class="btn btn-primary first" id="d2next9">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction9()" class="btn btn-primary first" id="d2next9">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content9">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 9 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count9"></p>
+          <a href="#"><img id="d2doubtimg9" data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint9">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
@@ -357,7 +404,7 @@
   </div>
 
   <!-- Modal10 -->
-  <div class="modal fade" id="Modalframe10" tabindex="-1" role="dialog" aria-labelledby="Modalframe 10"
+  <div class="modal fade" id="d2Modalframe10" tabindex="-1" role="dialog" aria-labelledby="d2Modalframe 10"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -377,16 +424,39 @@
               id="d2task10">Task completed</button></a>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="d2myFunction10()" class="btn btn-primary first" id="d2next10">Next &raquo;</button>
+          <button type="button" onclick="d2myFunction10()" class="btn btn-primary first" id="d2next10">Next
+            &raquo;</button>
           <div style="display:none;color:rgb(226, 101, 29);margin-left:1px;font-size: 10px;" id="d2content10">
             <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 8 സെക്കന്റുകൾക്ക് ശേഷം
               പ്രവർത്തനക്ഷമമാകും.</b>
           </div>
           <p id="d2count10"></p>
+          <a href="#"><img id="d2doubtimg10 " data-toggle="modal" data-target="#d2doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
         </div>
         <div id="d2hint10">
           <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- D2Doubt Modal -->
+<div class="modal fade" id="d2doubtModalframe" tabindex="-1" role="dialog" aria-labelledby="d2doubtModalframe"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d2doubtModalframe10Label">Do You Have Any Doubt?</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST" enctype="multipart/form-data" id="form_id"></form>
+        <div class="form-group">
+          <h5><label for="inputMessage">Message:</label></h5>
+          <textarea class="form-control" placeholder="Write your message" rows="8" cols="30" required></textarea>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
       </div>
     </div>
   </div>
