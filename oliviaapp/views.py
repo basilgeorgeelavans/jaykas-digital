@@ -26,23 +26,44 @@ def day3_1(request):
 def day4(request):
     return render (request,'day4.html')
 
+def day4_1(request):
+    return render (request,'day4.1.html')
+
 def day5(request):
     return render (request,'day5.html')
+
+def day5_1(request):
+    return render (request,'day5.1.html')
 
 def day6(request):
     return render (request,'day6.html')
 
+def day6_1(request):
+    return render (request,'day6.1.html')
+
 def day7(request):
     return render (request,'day7.html')
+
+def day7_1(request):
+    return render (request,'day7.1.html')
 
 def day8(request):
     return render (request,'day8.html')
 
+def day8_1(request):
+    return render (request,'day8.1.html')
+
 def day9(request):
     return render (request,'day9.html')
 
+def day9_1(request):
+    return render (request,'day9.1.html')
+
 def day10(request):
     return render (request,'day10.html')
+
+def day10_1(request):
+    return render (request,'day10.1.html')
 
 def day11(request):
     return render (request,'day11.html')

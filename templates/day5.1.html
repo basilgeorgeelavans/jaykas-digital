@@ -1,0 +1,459 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="flex">
+  <div class="text-white bg-dark" style="width: 250px;">
+    <b>Day 05 continues...</b>
+    <ul class="nav nav-pills flex-column ">
+      <li id="d5frame11"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe11"> <i
+            class="fa fa-bookmark"></i><span>Frame 11</span> </a> </li>
+      <li id="d5frame12"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe12"> <i
+            class="fa fa-bookmark"></i><span>Frame 12</span> </a> </li>
+      <li id="d5frame13"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe13"> <i
+            class="fa fa-bookmark"></i><span>Frame 13</span> </a> </li>
+      <li id="d5frame14"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe14"> <i
+            class="fa fa-bookmark"></i><span>Frame 14</span> </a> </li>
+      <li id="d5frame15"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe15"> <i
+            class="fa fa-bookmark"></i><span>Frame 15</span> </a> </li>
+      <li id="d5frame16"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe16"> <i
+            class="fa fa-bookmark"></i><span>Frame 16</span> </a> </li>
+      <li id="d5frame17"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe17"> <i
+            class="fa fa-bookmark"></i><span>Frame 17</span> </a> </li>
+      <li id="d5frame18"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe18"> <i
+            class="fa fa-bookmark"></i><span>Frame 18</span> </a> </li>
+      <li id="d5frame19"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe19"> <i
+            class="fa fa-bookmark"></i><span>Frame 19</span> </a> </li>
+      <li id="d5frame20"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d5Modalframe20"> <i
+            class="fa fa-bookmark"></i><span>Frame 20</span> </a> </li>
+    </ul>
+  </div>
+  <div>
+    <img class="days_1" src="{% static 'images/day4.1.jpg' %}">
+    <div class="flex">
+      <a href="{% url 'day3' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">&laquo;
+        Back to Previouspage</a>&nbsp;&nbsp;&nbsp;
+      <a href="{% url 'index' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s"
+        id="frame1">Day 03 completed</a>
+    </div>
+  </div>
+  <!-- Modal11 -->
+  <div class="modal fade" id="d5Modalframe11" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 11"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="d5Modalframe11Label">Frame 11</h5>
+        </div>
+        <div class="modal-body">
+          <video id="d5complete11" controls width="100%">
+            <source src="{% static 'videos/day05/frame11end.mp4'%}" type="video/mp4">
+          </video>
+          <video id="d5myVideo11" controls width="100%">
+            <source src="{% static 'videos/day05/frame11.mp4'%}" type="video/mp4">
+          </video>
+          <div class="playpause" id="d5playpause11" onclick="d5playpau11()"></div>
+          <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+              id="d5task11">Task completed</button></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="d5myFunction11()" class="btn btn-primary first" id="d5next11">Next
+            &raquo;</button>
+          <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content11">
+            <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
+              പ്രവർത്തനക്ഷമമാകും.</b>
+          </div>
+          <p id="d5count11"></p>
+          <a href="#"><img id="d5doubtimg11" data-toggle="modal" data-target="#d5doubtModalframe"
+              src="{% static 'images/doubtimg5.png' %}"></a>
+        </div>
+        <div id="d5hint11">
+          <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal12 -->
+<div class="modal fade" id="d5Modalframe12" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 12"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe12Label">Frame 12</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete12" controls width="100%">
+          <source src="{% static 'videos/day05/frame12end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo12" controls width="100%">
+          <source src="{% static 'videos/day05/frame12.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause12" onclick="d5playpau12()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task12">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction12()" class="btn btn-primary first" id="d5next12">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content12">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count12"></p>
+        <a href="#"><img id="d5doubtimg12" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint12">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal13 -->
+<div class="modal fade" id="d5Modalframe13" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 13"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe13Label">Frame 13</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete13" controls width="100%">
+          <source src="{% static 'videos/day05/frame13end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo13" controls width="100%">
+          <source src="{% static 'videos/day05/frame13.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause13" onclick="d5playpau13()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task13">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction13()" class="btn btn-primary first" id="d5next13">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content13">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count13"></p>
+        <a href="#"><img id="d5doubtimg13" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint13">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal14 -->
+<div class="modal fade" id="d5Modalframe14" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 14"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe14Label">Frame 14</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete14" controls width="100%">
+          <source src="{% static 'videos/day05/frame14end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo14" controls width="100%">
+          <source src="{% static 'videos/day05/frame14.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause14" onclick="d5playpau14()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task14">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction14()" class="btn btn-primary first" id="d5next14">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content14">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count14"></p>
+        <a href="#"><img id="d5doubtimg14" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint14">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal15 -->
+<div class="modal fade" id="d5Modalframe15" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 15"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe15Label">Frame 15</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete15" controls width="100%">
+          <source src="{% static 'videos/day05/frame15end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo15" controls width="100%">
+          <source src="{% static 'videos/day05/frame15.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause15" onclick="d5playpau15()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task15">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction15()" class="btn btn-primary first" id="d5next15">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content15">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count15"></p>
+        <a href="#"><img id="d5doubtimg15" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint15">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal16 -->
+<div class="modal fade" id="d5Modalframe16" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 16"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe16Label">Frame 16</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete16" controls width="100%">
+          <source src="{% static 'videos/day05/frame16end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo16" controls width="100%">
+          <source src="{% static 'videos/day05/frame16.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause16" onclick="d5playpau16()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task16">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction16()" class="btn btn-primary first" id="d5next16">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content16">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count16"></p>
+        <a href="#"><img id="d5doubtimg16" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint16">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal17 -->
+<div class="modal fade" id="d5Modalframe17" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 17"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe17Label">Frame 17</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete17" controls width="100%">
+          <source src="{% static 'videos/day05/frame17end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo17" controls width="100%">
+          <source src="{% static 'videos/day05/frame17.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause17" onclick="d5playpau17()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task17">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction17()" class="btn btn-primary first" id="d5next17">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content17">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count17"></p>
+        <a href="#"><img id="d5doubtimg17" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint17">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal18 -->
+<div class="modal fade" id="d5Modalframe18" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 18"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe18Label">Frame 18</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete18" controls width="100%">
+          <source src="{% static 'videos/day05/frame18end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo18" controls width="100%">
+          <source src="{% static 'videos/day05/frame18.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause18" onclick="d5playpau18()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task18">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction18()" class="btn btn-primary first" id="d5next18">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content18">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count18"></p>
+        <a href="#"><img id="d5doubtimg18" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint18">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal19 -->
+<div class="modal fade" id="d5Modalframe19" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 19"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe19Label">Frame 19</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete19" controls width="100%">
+          <source src="{% static 'videos/day05/frame19end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo19" controls width="100%">
+          <source src="{% static 'videos/day05/frame19.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause19" onclick="d5playpau19()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task19">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction19()" class="btn btn-primary first" id="d5next19">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content19">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count19"></p>
+        <a href="#"><img id="d5doubtimg19" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint19">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal20 -->
+<div class="modal fade" id="d5Modalframe20" tabindex="-1" role="dialog" aria-labelledby="d5Modalframe 20"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d5Modalframe20Label">Frame 20</h5>
+      </div>
+      <div class="modal-body">
+        <video id="d5complete20" controls width="100%">
+          <source src="{% static 'videos/day05/frame20end.mp4'%}" type="video/mp4">
+        </video>
+        <video id="d5myVideo20" controls width="100%">
+          <source src="{% static 'videos/day05/frame20.mp4'%}" type="video/mp4">
+        </video>
+        <div class="playpause" id="d5playpause20" onclick="d5playpau20()"></div>
+        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+            id="d5task20">Task completed</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="d5myFunction20()" class="btn btn-primary first" id="d5next20">Next
+          &raquo;</button>
+        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d5content20">
+          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
+            പ്രവർത്തനക്ഷമമാകും.</b>
+        </div>
+        <p id="d5count20"></p>
+        <a href="#"><img id="d5doubtimg20" data-toggle="modal" data-target="#d5doubtModalframe"
+            src="{% static 'images/doubtimg5.png' %}"></a>
+      </div>
+      <div id="d5hint20">
+        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.<br>
+        അഞ്ച് പ്രാവശ്യം വായിക്കുക.<br>
+        കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .<br></b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- d5Doubt Modal -->
+<div class="modal fade" id="d5doubtModalframe" tabindex="-1" role="dialog" aria-labelledby="d5doubtModalframe"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="d2doubtModalframeLabel">Do You Have Any Doubt?</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST" enctype="multipart/form-data" id="form_id"></form>
+        <div class="form-group">
+          <h5><label for="inputMessage">Message:</label></h5>
+          <textarea class="form-control" placeholder="Write your message" rows="8" cols="30" required></textarea>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
