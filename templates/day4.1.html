@@ -21,23 +21,19 @@
             class="fa fa-bookmark"></i><span>Frame 17</span> </a> </li>
       <li id="d4frame18"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d4Modalframe18"> <i
             class="fa fa-bookmark"></i><span>Frame 18</span> </a> </li>
-      <li id="d4frame19"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d4Modalframe19"> <i
-            class="fa fa-bookmark"></i><span>Frame 19</span> </a> </li>
-      <li id="d4frame20"> <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#d4Modalframe20"> <i
-            class="fa fa-bookmark"></i><span>Frame 20</span> </a> </li>
     </ul>
   </div>
   <div>
     <img class="days_1" src="{% static 'images/day4.1.jpg' %}">
     <div class="flex">
-      <a href="{% url 'day3' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">&laquo;
+      <a href="{% url 'day4' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">&laquo;
         Back to Previouspage</a>&nbsp;&nbsp;&nbsp;
       <a href="{% url 'index' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s"
-        id="frame1">Day 03 completed</a>
+        id="frame1">Day 04 completed</a>
     </div>
   </div>
-  <!-- hear it five times -->
- <!-- Modal11 -->
+
+<!-- Modal11 -->
 <div class="modal fade" id="d4Modalframe11" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 11"
 aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
@@ -59,22 +55,22 @@ aria-hidden="true">
     <div class="modal-footer">
       <button type="button" onclick="d4myFunction11()" class="btn btn-primary first" id="d4next11">Next
         &raquo;</button>
-      <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content11">
-        <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
+      <div style="display:none;color:rgb(227, 110, 29);margin-left:1px;font-size: 10px;" id="d4content11">
+        <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
           പ്രവർത്തനക്ഷമമാകും.</b>
       </div>
       <p id="d4count11"></p>
       <a href="#"><img id="d4doubtimg11" data-toggle="modal" data-target="#d4doubtModalframe"
           src="{% static 'images/doubtimg5.png' %}"></a>
     </div>
-    <div id="d4hint11a">
-      <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-    </div>
-    <div id="d4hint11b">
-      <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-    </div>
-    <div id="d4hint11c">
-      <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
+    <div id="d4hint11">
+      <img id="d4hintimg11" src="{% static 'images/bulb.jpg' %}">
+      <b id="d4first11">1.അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b><img id="d4tickimga11"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4second11">2.അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b><img id="d4tickimgb11"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4third11">3.കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b><img id="d4tickimgc11"
+      src="{% static 'images/tickimg.png' %}">
     </div>
   </div>
 </div>
@@ -83,801 +79,44 @@ aria-hidden="true">
 
 <!-- Modal12 -->
 <div class="modal fade" id="d4Modalframe12" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 12"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe12Label">Frame 12</h5>
+aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="d4Modalframe12Label">Frame 12</h5>
+    </div>
+    <div class="modal-body">
+      <video id="d4complete12" controls width="100%">
+        <source src="{% static 'videos/day04/frame12end.mp4'%}" type="video/mp4">
+      </video>
+      <video id="d4myVideo12" controls width="100%">
+        <source src="{% static 'videos/day04/frame12.mp4'%}" type="video/mp4">
+      </video>
+      <div class="playpause" id="d4playpause12" onclick="d4playpau12()"></div>
+      <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+          id="d4task12">Task completed</button></a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" onclick="d4myFunction12()" class="btn btn-primary first" id="d4next12">Next
+        &raquo;</button>
+      <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content12">
+        <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
+          പ്രവർത്തനക്ഷമമാകും.</b>
       </div>
-      <div class="modal-body">
-        <video id="d4complete12" controls width="100%">
-          <source src="{% static 'videos/day04/frame12end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo12" controls width="100%">
-          <source src="{% static 'videos/day04/frame12.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause12" onclick="d4playpau12()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task12">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction12()" class="btn btn-primary first" id="d4next12">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content12">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count12"></p>
-        <a href="#"><img id="d4doubtimg12" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint12">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
+      <p id="d4count12"></p>
+      <a href="#"><img id="d4doubtimg12" data-toggle="modal" data-target="#d4doubtModalframe"
+          src="{% static 'images/doubtimg5.png' %}"></a>
+    </div>
+    <div id="d4hint12">
+      <img id="d4hintimg12" src="{% static 'images/bulb.jpg' %}">
+      <b id="d4first12">1.അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b><img id="d4tickimga12"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4second12">2.അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b><img id="d4tickimgb12"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4third12">3.കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b><img id="d4tickimgc12"
+      src="{% static 'images/tickimg.png' %}">
     </div>
   </div>
-</div>
-</div>
-
-<!-- Modal13 -->
-<div class="modal fade" id="d4Modalframe13" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 13"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe13Label">Frame 13</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete13" controls width="100%">
-          <source src="{% static 'videos/day04/frame13end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo13" controls width="100%">
-          <source src="{% static 'videos/day04/frame13.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause13" onclick="d4playpau13()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task13">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction13()" class="btn btn-primary first" id="d4next13">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content13">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count13"></p>
-        <a href="#"><img id="d4doubtimg13" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint13">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal14 -->
-<div class="modal fade" id="d4Modalframe14" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 14"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe14Label">Frame 14</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete14" controls width="100%">
-          <source src="{% static 'videos/day04/frame14end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo14" controls width="100%">
-          <source src="{% static 'videos/day04/frame14.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause14" onclick="d4playpau14()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task14">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction14()" class="btn btn-primary first" id="d4next14">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content14">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count14"></p>
-        <a href="#"><img id="d4doubtimg14" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint14">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal15 -->
-<div class="modal fade" id="d4Modalframe15" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 15"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe15Label">Frame 15</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete15" controls width="100%">
-          <source src="{% static 'videos/day04/frame15end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo15" controls width="100%">
-          <source src="{% static 'videos/day04/frame15.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause15" onclick="d4playpau15()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task15">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction15()" class="btn btn-primary first" id="d4next15">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content15">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count15"></p>
-        <a href="#"><img id="d4doubtimg15" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint15">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal16 -->
-<div class="modal fade" id="d4Modalframe16" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 16"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe16Label">Frame 16</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete16" controls width="100%">
-          <source src="{% static 'videos/day04/frame16end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo16" controls width="100%">
-          <source src="{% static 'videos/day04/frame16.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause16" onclick="d4playpau16()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task16">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction16()" class="btn btn-primary first" id="d4next16">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content16">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count16"></p>
-        <a href="#"><img id="d4doubtimg16" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint16">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal17 -->
-<div class="modal fade" id="d4Modalframe17" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 17"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe17Label">Frame 17</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete17" controls width="100%">
-          <source src="{% static 'videos/day04/frame17end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo17" controls width="100%">
-          <source src="{% static 'videos/day04/frame17.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause17" onclick="d4playpau17()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task17">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction17()" class="btn btn-primary first" id="d4next17">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content17">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count17"></p>
-        <a href="#"><img id="d4doubtimg17" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint17">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal18 -->
-<div class="modal fade" id="d4Modalframe18" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 18"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe18Label">Frame 18</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete18" controls width="100%">
-          <source src="{% static 'videos/day04/frame18end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo18" controls width="100%">
-          <source src="{% static 'videos/day04/frame18.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause18" onclick="d4playpau18()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task18">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction18()" class="btn btn-primary first" id="d4next18">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content18">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count18"></p>
-        <a href="#"><img id="d4doubtimg18" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint18">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal19 -->
-<div class="modal fade" id="d4Modalframe19" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 19"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe19Label">Frame 19</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete19" controls width="100%">
-          <source src="{% static 'videos/day04/frame19end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo19" controls width="100%">
-          <source src="{% static 'videos/day04/frame19.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause19" onclick="d4playpau19()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task19">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction19()" class="btn btn-primary first" id="d4next19">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content19">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count19"></p>
-        <a href="#"><img id="d4doubtimg19" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint19">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal20 -->
-<div class="modal fade" id="d4Modalframe20" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 20"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="d4Modalframe20Label">Frame 20</h5>
-      </div>
-      <div class="modal-body">
-        <video id="d4complete20" controls width="100%">
-          <source src="{% static 'videos/day04/frame20end.mp4'%}" type="video/mp4">
-        </video>
-        <video id="d4myVideo20" controls width="100%">
-          <source src="{% static 'videos/day04/frame20.mp4'%}" type="video/mp4">
-        </video>
-        <div class="playpause" id="d4playpause20" onclick="d4playpau20()"></div>
-        <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-            id="d4task20">Task completed</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="d4myFunction20()" class="btn btn-primary first" id="d4next20">Next
-          &raquo;</button>
-        <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content20">
-          <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-            പ്രവർത്തനക്ഷമമാകും.</b>
-        </div>
-        <p id="d4count20"></p>
-        <a href="#"><img id="d4doubtimg20" data-toggle="modal" data-target="#d4doubtModalframe"
-            src="{% static 'images/doubtimg5.png' %}"></a>
-      </div>
-      <div id="d4hint20">
-        <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- read it five times -->
-
- <!-- Modal11 -->
- <div class="modal fade" id="d4Modalframe11r" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 11r"
- aria-hidden="true">
- <div class="modal-dialog modal-lg" role="document">
-   <div class="modal-content">
-     <div class="modal-header">
-       <h5 class="modal-title" id="d4Modalframe11Labelr">Frame 11</h5>
-     </div>
-     <div class="modal-body">
-       <video id="d4complete11" controls width="100%">
-         <source src="{% static 'videos/day04/frame11end.mp4'%}" type="video/mp4">
-       </video>
-       <video id="d4myVideo11" controls width="100%">
-         <source src="{% static 'videos/day04/frame11.mp4'%}" type="video/mp4">
-       </video>
-       <div class="playpause" id="d4playpause11" onclick="d4playpau11()"></div>
-       <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-           id="d4task11">Task completed</button></a>
-     </div>
-     <div class="modal-footer">
-       <button type="button" onclick="d4myFunction11()" class="btn btn-primary first" id="d4next11">Next
-         &raquo;</button>
-       <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content11">
-         <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
-           പ്രവർത്തനക്ഷമമാകും.</b>
-       </div>
-       <p id="d4count11"></p>
-       <a href="#"><img id="d4doubtimg11" data-toggle="modal" data-target="#d4doubtModalframe"
-           src="{% static 'images/doubtimg5.png' %}"></a>
-     </div>
-     <div id="d4hint11">
-       <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-
-<!-- Modal12 -->
-<div class="modal fade" id="d4Modalframe12r" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 12r"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe12Labelr">Frame 12</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete12" controls width="100%">
-       <source src="{% static 'videos/day04/frame12end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo12" controls width="100%">
-       <source src="{% static 'videos/day04/frame12.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause12" onclick="d4playpau12()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task12">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction12()" class="btn btn-primary first" id="d4next12">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content12">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count12"></p>
-     <a href="#"><img id="d4doubtimg12" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint12">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal13 -->
-<div class="modal fade" id="d4Modalframe13r" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 13r"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe13Labelr">Frame 13</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete13" controls width="100%">
-       <source src="{% static 'videos/day04/frame13end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo13" controls width="100%">
-       <source src="{% static 'videos/day04/frame13.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause13" onclick="d4playpau13()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task13">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction13()" class="btn btn-primary first" id="d4next13">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content13">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count13"></p>
-     <a href="#"><img id="d4doubtimg13" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint13">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal14 -->
-<div class="modal fade" id="d4Modalframe14" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 14"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe14Label">Frame 14</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete14" controls width="100%">
-       <source src="{% static 'videos/day04/frame14end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo14" controls width="100%">
-       <source src="{% static 'videos/day04/frame14.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause14" onclick="d4playpau14()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task14">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction14()" class="btn btn-primary first" id="d4next14">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content14">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count14"></p>
-     <a href="#"><img id="d4doubtimg14" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint14">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal15 -->
-<div class="modal fade" id="d4Modalframe15" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 15"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe15Label">Frame 15</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete15" controls width="100%">
-       <source src="{% static 'videos/day04/frame15end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo15" controls width="100%">
-       <source src="{% static 'videos/day04/frame15.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause15" onclick="d4playpau15()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task15">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction15()" class="btn btn-primary first" id="d4next15">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content15">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count15"></p>
-     <a href="#"><img id="d4doubtimg15" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint15">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal16 -->
-<div class="modal fade" id="d4Modalframe16" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 16"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe16Label">Frame 16</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete16" controls width="100%">
-       <source src="{% static 'videos/day04/frame16end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo16" controls width="100%">
-       <source src="{% static 'videos/day04/frame16.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause16" onclick="d4playpau16()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task16">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction16()" class="btn btn-primary first" id="d4next16">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content16">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count16"></p>
-     <a href="#"><img id="d4doubtimg16" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint16">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal17 -->
-<div class="modal fade" id="d4Modalframe17" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 17"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe17Label">Frame 17</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete17" controls width="100%">
-       <source src="{% static 'videos/day04/frame17end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo17" controls width="100%">
-       <source src="{% static 'videos/day04/frame17.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause17" onclick="d4playpau17()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task17">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction17()" class="btn btn-primary first" id="d4next17">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content17">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count17"></p>
-     <a href="#"><img id="d4doubtimg17" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint17">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal18 -->
-<div class="modal fade" id="d4Modalframe18" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 18"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe18Label">Frame 18</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete18" controls width="100%">
-       <source src="{% static 'videos/day04/frame18end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo18" controls width="100%">
-       <source src="{% static 'videos/day04/frame18.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause18" onclick="d4playpau18()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task18">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction18()" class="btn btn-primary first" id="d4next18">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content18">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count18"></p>
-     <a href="#"><img id="d4doubtimg18" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint18">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal19 -->
-<div class="modal fade" id="d4Modalframe19" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 19"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe19Label">Frame 19</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete19" controls width="100%">
-       <source src="{% static 'videos/day04/frame19end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo19" controls width="100%">
-       <source src="{% static 'videos/day04/frame19.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause19" onclick="d4playpau19()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task19">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction19()" class="btn btn-primary first" id="d4next19">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content19">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count19"></p>
-     <a href="#"><img id="d4doubtimg19" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint19">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal20 -->
-<div class="modal fade" id="d4Modalframe20" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 20"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe20Label">Frame 20</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete20" controls width="100%">
-       <source src="{% static 'videos/day04/frame20end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo20" controls width="100%">
-       <source src="{% static 'videos/day04/frame20.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause20" onclick="d4playpau20()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task20">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction20()" class="btn btn-primary first" id="d4next20">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content20">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count20"></p>
-     <a href="#"><img id="d4doubtimg20" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint20">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- read along with it -->
- <!-- Modal11 -->
- <div class="modal fade" id="d4Modalframe11" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 11"
- aria-hidden="true">
- <div class="modal-dialog modal-lg" role="document">
-   <div class="modal-content">
-     <div class="modal-header">
-       <h5 class="modal-title" id="d4Modalframe11Label">Frame 11</h5>
-     </div>
-     <div class="modal-body">
-       <video id="d4complete11" controls width="100%">
-         <source src="{% static 'videos/day04/frame11end.mp4'%}" type="video/mp4">
-       </video>
-       <video id="d4myVideo11" controls width="100%">
-         <source src="{% static 'videos/day04/frame11.mp4'%}" type="video/mp4">
-       </video>
-       <div class="playpause" id="d4playpause11" onclick="d4playpau11()"></div>
-       <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-           id="d4task11">Task completed</button></a>
-     </div>
-     <div class="modal-footer">
-       <button type="button" onclick="d4myFunction11()" class="btn btn-primary first" id="d4next11">Next
-         &raquo;</button>
-       <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content11">
-         <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
-           പ്രവർത്തനക്ഷമമാകും.</b>
-       </div>
-       <p id="d4count11"></p>
-       <a href="#"><img id="d4doubtimg11" data-toggle="modal" data-target="#d4doubtModalframe"
-           src="{% static 'images/doubtimg5.png' %}"></a>
-     </div>
-     <div id="d4hint11">
-       <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .</b>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-
-<!-- Modal12 -->
-<div class="modal fade" id="d4Modalframe12" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 12"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe12Label">Frame 12</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete12" controls width="100%">
-       <source src="{% static 'videos/day04/frame12end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo12" controls width="100%">
-       <source src="{% static 'videos/day04/frame12.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause12" onclick="d4playpau12()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task12">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction12()" class="btn btn-primary first" id="d4next12">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content12">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count12"></p>
-     <a href="#"><img id="d4doubtimg12" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint12">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക .</b>
-   </div>
- </div>
 </div>
 </div>
 </div>
@@ -886,74 +125,87 @@ aria-hidden="true">
 <div class="modal fade" id="d4Modalframe13" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 13"
 aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe13Label">Frame 13</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete13" controls width="100%">
-       <source src="{% static 'videos/day04/frame13end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo13" controls width="100%">
-       <source src="{% static 'videos/day04/frame13.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause13" onclick="d4playpau13()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task13">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction13()" class="btn btn-primary first" id="d4next13">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content13">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count13"></p>
-     <a href="#"><img id="d4doubtimg13" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint13">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
-   </div>
- </div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="d4Modalframe13Label">Frame 13</h5>
+    </div>
+    <div class="modal-body">
+      <video id="d4complete13" controls width="100%">
+        <source src="{% static 'videos/day04/frame13end.mp4'%}" type="video/mp4">
+      </video>
+      <video id="d4myVideo13" controls width="100%">
+        <source src="{% static 'videos/day04/frame13.mp4'%}" type="video/mp4">
+      </video>
+      <div class="playpause" id="d4playpause13" onclick="d4playpau13()"></div>
+      <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+          id="d4task13">Task completed</button></a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" onclick="d4myFunction13()" class="btn btn-primary first" id="d4next13">Next
+        &raquo;</button>
+      <div style="display:none;color:rgb(227, 130, 29);margin-left:1px;font-size: 10px;" id="d4content13">
+        <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 13 സെക്കന്റുകൾക്ക് ശേഷം
+          പ്രവർത്തനക്ഷമമാകും.</b>
+      </div>
+      <p id="d4count13"></p>
+      <a href="#"><img id="d4doubtimg13" data-toggle="modal" data-target="#d4doubtModalframe"
+          src="{% static 'images/doubtimg5.png' %}"></a>
+    </div>
+    <div id="d4hint13">
+      <img id="d4hintimg13" src="{% static 'images/bulb.jpg' %}">
+      <b id="d4first13">1.അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b><img id="d4tickimga13"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4second13">2.അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b><img id="d4tickimgb13"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4third13">3.കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b><img id="d4tickimgc13"
+      src="{% static 'images/tickimg.png' %}">
+    </div>
+  </div>
 </div>
 </div>
 </div>
+
 
 <!-- Modal14 -->
 <div class="modal fade" id="d4Modalframe14" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 14"
 aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe14Label">Frame 14</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete14" controls width="100%">
-       <source src="{% static 'videos/day04/frame14end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo14" controls width="100%">
-       <source src="{% static 'videos/day04/frame14.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause14" onclick="d4playpau14()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task14">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction14()" class="btn btn-primary first" id="d4next14">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content14">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count14"></p>
-     <a href="#"><img id="d4doubtimg14" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint14">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
-   </div>
- </div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="d4Modalframe14Label">Frame 14</h5>
+    </div>
+    <div class="modal-body">
+      <video id="d4complete14" controls width="100%">
+        <source src="{% static 'videos/day04/frame14end.mp4'%}" type="video/mp4">
+      </video>
+      <video id="d4myVideo14" controls width="100%">
+        <source src="{% static 'videos/day04/frame14.mp4'%}" type="video/mp4">
+      </video>
+      <div class="playpause" id="d4playpause14" onclick="d4playpau14()"></div>
+      <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+          id="d4task14">Task completed</button></a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" onclick="d4myFunction14()" class="btn btn-primary first" id="d4next14">Next
+        &raquo;</button>
+      <div style="display:none;color:rgb(227, 140, 29);margin-left:1px;font-size: 10px;" id="d4content14">
+        <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 14 സെക്കന്റുകൾക്ക് ശേഷം
+          പ്രവർത്തനക്ഷമമാകും.</b>
+      </div>
+      <p id="d4count14"></p>
+      <a href="#"><img id="d4doubtimg14" data-toggle="modal" data-target="#d4doubtModalframe"
+          src="{% static 'images/doubtimg5.png' %}"></a>
+    </div>
+    <div id="d4hint14">
+      <img id="d4hintimg14" src="{% static 'images/bulb.jpg' %}">
+      <b id="d4first14">1.അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b><img id="d4tickimga14"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4second14">2.അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b><img id="d4tickimgb14"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4third14">3.കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b><img id="d4tickimgc14"
+      src="{% static 'images/tickimg.png' %}">
+    </div>
+  </div>
 </div>
 </div>
 </div>
@@ -962,36 +214,42 @@ aria-hidden="true">
 <div class="modal fade" id="d4Modalframe15" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 15"
 aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe15Label">Frame 15</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete15" controls width="100%">
-       <source src="{% static 'videos/day04/frame15end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo15" controls width="100%">
-       <source src="{% static 'videos/day04/frame15.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause15" onclick="d4playpau15()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task15">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction15()" class="btn btn-primary first" id="d4next15">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content15">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count15"></p>
-     <a href="#"><img id="d4doubtimg15" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint15">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
-   </div>
- </div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="d4Modalframe15Label">Frame 15</h5>
+    </div>
+    <div class="modal-body">
+      <video id="d4complete15" controls width="100%">
+        <source src="{% static 'videos/day04/frame15end.mp4'%}" type="video/mp4">
+      </video>
+      <video id="d4myVideo15" controls width="100%">
+        <source src="{% static 'videos/day04/frame15.mp4'%}" type="video/mp4">
+      </video>
+      <div class="playpause" id="d4playpause15" onclick="d4playpau15()"></div>
+      <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+          id="d4task15">Task completed</button></a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" onclick="d4myFunction15()" class="btn btn-primary first" id="d4next15">Next
+        &raquo;</button>
+      <div style="display:none;color:rgb(227, 150, 29);margin-left:1px;font-size: 10px;" id="d4content15">
+        <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 15 സെക്കന്റുകൾക്ക് ശേഷം
+          പ്രവർത്തനക്ഷമമാകും.</b>
+      </div>
+      <p id="d4count15"></p>
+      <a href="#"><img id="d4doubtimg15" data-toggle="modal" data-target="#d4doubtModalframe"
+          src="{% static 'images/doubtimg5.png' %}"></a>
+    </div>
+    <div id="d4hint15">
+      <img id="d4hintimg15" src="{% static 'images/bulb.jpg' %}">
+      <b id="d4first15">1.അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b><img id="d4tickimga15"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4second15">2.അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b><img id="d4tickimgb15"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4third15">3.കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b><img id="d4tickimgc15"
+      src="{% static 'images/tickimg.png' %}">
+    </div>
+  </div>
 </div>
 </div>
 </div>
@@ -1000,191 +258,46 @@ aria-hidden="true">
 <div class="modal fade" id="d4Modalframe16" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 16"
 aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe16Label">Frame 16</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete16" controls width="100%">
-       <source src="{% static 'videos/day04/frame16end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo16" controls width="100%">
-       <source src="{% static 'videos/day04/frame16.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause16" onclick="d4playpau16()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task16">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction16()" class="btn btn-primary first" id="d4next16">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content16">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count16"></p>
-     <a href="#"><img id="d4doubtimg16" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint16">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
-   </div>
- </div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="d4Modalframe16Label">Frame 16</h5>
+    </div>
+    <div class="modal-body">
+      <video id="d4complete16" controls width="100%">
+        <source src="{% static 'videos/day04/frame16end.mp4'%}" type="video/mp4">
+      </video>
+      <video id="d4myVideo16" controls width="100%">
+        <source src="{% static 'videos/day04/frame16.mp4'%}" type="video/mp4">
+      </video>
+      <div class="playpause" id="d4playpause16" onclick="d4playpau16()"></div>
+      <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
+          id="d4task16">Task completed</button></a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" onclick="d4myFunction16()" class="btn btn-primary first" id="d4next16">Next
+        &raquo;</button>
+      <div style="display:none;color:rgb(227, 160, 29);margin-left:1px;font-size: 10px;" id="d4content16">
+        <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 16 സെക്കന്റുകൾക്ക് ശേഷം
+          പ്രവർത്തനക്ഷമമാകും.</b>
+      </div>
+      <p id="d4count16"></p>
+      <a href="#"><img id="d4doubtimg16" data-toggle="modal" data-target="#d4doubtModalframe"
+          src="{% static 'images/doubtimg5.png' %}"></a>
+    </div>
+    <div id="d4hint16">
+      <img id="d4hintimg16" src="{% static 'images/bulb.jpg' %}">
+      <b id="d4first16">1.അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b><img id="d4tickimga16"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4second16">2.അഞ്ച് പ്രാവശ്യം വായിക്കുക.</b><img id="d4tickimgb16"
+      src="{% static 'images/tickimg.png' %}">
+      <b id="d4third16">3.കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b><img id="d4tickimgc16"
+      src="{% static 'images/tickimg.png' %}">
+    </div>
+  </div>
 </div>
 </div>
 </div>
 
-<!-- Modal17 -->
-<div class="modal fade" id="d4Modalframe17" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 17"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe17Label">Frame 17</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete17" controls width="100%">
-       <source src="{% static 'videos/day04/frame17end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo17" controls width="100%">
-       <source src="{% static 'videos/day04/frame17.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause17" onclick="d4playpau17()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task17">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction17()" class="btn btn-primary first" id="d4next17">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content17">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count17"></p>
-     <a href="#"><img id="d4doubtimg17" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint17">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal18 -->
-<div class="modal fade" id="d4Modalframe18" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 18"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe18Label">Frame 18</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete18" controls width="100%">
-       <source src="{% static 'videos/day04/frame18end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo18" controls width="100%">
-       <source src="{% static 'videos/day04/frame18.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause18" onclick="d4playpau18()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task18">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction18()" class="btn btn-primary first" id="d4next18">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content18">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count18"></p>
-     <a href="#"><img id="d4doubtimg18" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint18">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal19 -->
-<div class="modal fade" id="d4Modalframe19" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 19"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe19Label">Frame 19</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete19" controls width="100%">
-       <source src="{% static 'videos/day04/frame19end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo19" controls width="100%">
-       <source src="{% static 'videos/day04/frame19.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause19" onclick="d4playpau19()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task19">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction19()" class="btn btn-primary first" id="d4next19">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content19">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count19"></p>
-     <a href="#"><img id="d4doubtimg19" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint19">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b> കേൾക്കുന്നതിനൊപ്പം വായിക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
-
-<!-- Modal20 -->
-<div class="modal fade" id="d4Modalframe20" tabindex="-1" role="dialog" aria-labelledby="d4Modalframe 20"
-aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
- <div class="modal-content">
-   <div class="modal-header">
-     <h5 class="modal-title" id="d4Modalframe20Label">Frame 20</h5>
-   </div>
-   <div class="modal-body">
-     <video id="d4complete20" controls width="100%">
-       <source src="{% static 'videos/day04/frame20end.mp4'%}" type="video/mp4">
-     </video>
-     <video id="d4myVideo20" controls width="100%">
-       <source src="{% static 'videos/day04/frame20.mp4'%}" type="video/mp4">
-     </video>
-     <div class="playpause" id="d4playpause20" onclick="d4playpau20()"></div>
-     <a href="{% url 'day3' %}"><button type="button" class="btn btn-primary first" data-dismiss="modal"
-         id="d4task20">Task completed</button></a>
-   </div>
-   <div class="modal-footer">
-     <button type="button" onclick="d4myFunction20()" class="btn btn-primary first" id="d4next20">Next
-       &raquo;</button>
-     <div style="display:none;color:rgb(227, 101, 29);margin-left:1px;font-size: 10px;" id="d4content20">
-       <b><img id="alertimg" src="{% static 'images/alertimg.png' %}">ബട്ടൺ 11 സെക്കന്റുകൾക്ക് ശേഷം
-         പ്രവർത്തനക്ഷമമാകും.</b>
-     </div>
-     <p id="d4count20"></p>
-     <a href="#"><img id="d4doubtimg20" data-toggle="modal" data-target="#d4doubtModalframe"
-         src="{% static 'images/doubtimg5.png' %}"></a>
-   </div>
-   <div id="d4hint20">
-     <img id="hintimg" src="{% static 'images/bulb.jpg' %}"><b>അഞ്ച് പ്രാവശ്യം കേൾക്കുക.</b>
-   </div>
- </div>
-</div>
-</div>
-</div>
 <!-- d4Doubt Modal -->
 <div class="modal fade" id="d4doubtModalframe" tabindex="-1" role="dialog" aria-labelledby="d4doubtModalframe"
   aria-hidden="true">

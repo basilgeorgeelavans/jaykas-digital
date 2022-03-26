@@ -95,9 +95,21 @@ $(document).ready(function () {
         backdrop: 'static',
       });
     });
-  
+
     $("#d5frame16").click(function () {
-      $("#d5endframe").modal({
+      $("#d5Modalframe16").modal({
+        backdrop: 'static',
+      });
+    });
+
+    $("#d5frame17").click(function () {
+      $("#d5Modalframe17").modal({
+        backdrop: 'static',
+      });
+    });
+
+    $("#d5frame18").click(function () {
+      $("#d5Modalframe18").modal({
         backdrop: 'static',
       });
     });
@@ -109,87 +121,87 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next').prop('disabled', false);
         $("#d5content").hide();
-      }, 10000);
+      }, 1000);
     });
   
-    $('#d5next2').click(function () {
+    $('#d5next02').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content2").show();
+      $("#d5content02").show();
   
       setTimeout(function () {
-        $('#d5next2').prop('disabled', false);
-        $("#d5content2").hide();
-      }, 14000);
+        $('#d5next02').prop('disabled', false);
+        $("#d5content02").hide();
+      }, 1000);
     });
   
-    $('#d5next3').click(function () {
+    $('#d5next03').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content3").show();
+      $("#d5content03").show();
   
       setTimeout(function () {
-        $('#d5next3').prop('disabled', false);
-        $("#d5content3").hide();
-      }, 11000);
+        $('#d5next03').prop('disabled', false);
+        $("#d5content03").hide();
+      }, 1000);
     });
   
-    $('#d5next4').click(function () {
+    $('#d5next04').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content4").show();
+      $("#d5content04").show();
   
       setTimeout(function () {
-        $('#d5next4').prop('disabled', false);
-        $("#d5content4").hide();
-      }, 7000);
+        $('#d5next04').prop('disabled', false);
+        $("#d5content04").hide();
+      }, 1000);
     });
   
-    $('#d5next5').click(function () {
+    $('#d5next05').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content5").show();
+      $("#d5content05").show();
   
       setTimeout(function () {
-        $('#d5next5').prop('disabled', false);
-        $("#d5content5").hide();
-      }, 10000);
+        $('#d5next05').prop('disabled', false);
+        $("#d5content05").hide();
+      }, 1000);
     });
   
-    $('#d5next6').click(function () {
+    $('#d5next06').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content6").show();
+      $("#d5content06").show();
   
       setTimeout(function () {
-        $('#d5next6').prop('disabled', false);
-        $("#d5content6").hide();
-      }, 16000);
+        $('#d5next06').prop('disabled', false);
+        $("#d5content06").hide();
+      }, 1000);
     });
   
-    $('#d5next7').click(function () {
+    $('#d5next07').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content7").show();
+      $("#d5content07").show();
   
       setTimeout(function () {
-        $('#d5next7').prop('disabled', false);
-        $("#d5content7").hide();
-      }, 13000);
+        $('#d5next07').prop('disabled', false);
+        $("#d5content07").hide();
+      }, 1000);
     });
   
-    $('#d5next8').click(function () {
+    $('#d5next08').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content8").show();
+      $("#d5content08").show();
   
       setTimeout(function () {
-        $('#d5next8').prop('disabled', false);
-        $("#d5content8").hide();
-      }, 11000);
+        $('#d5next08').prop('disabled', false);
+        $("#d5content08").hide();
+      }, 1000);
     });
   
-    $('#d5next9').click(function () {
+    $('#d5next09').click(function () {
       $(this).prop('disabled', true);
-      $("#d5content9").show();
+      $("#d5content09").show();
   
       setTimeout(function () {
-        $('#d5next9').prop('disabled', false);
-        $("#d5content9").hide();
-      }, 12000);
+        $('#d5next09').prop('disabled', false);
+        $("#d5content09").hide();
+      }, 1000);
     });
   
     $('#d5next10').click(function () {
@@ -199,7 +211,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next10').prop('disabled', false);
         $("#d5content10").hide();
-      }, 12000);
+      }, 1000);
     });
   
     $('#d5next11').click(function () {
@@ -209,7 +221,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next11').prop('disabled', false);
         $("#d5content11").hide();
-      }, 13000);
+      }, 1000);
     });
   
     $('#d5next12').click(function () {
@@ -219,7 +231,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next12').prop('disabled', false);
         $("#d5content12").hide();
-      }, 14000);
+      }, 1000);
     });
   
     $('#d5next13').click(function () {
@@ -229,7 +241,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next13').prop('disabled', false);
         $("#d5content13").hide();
-      }, 13000);
+      }, 1000);
     });
   
     $('#d5next14').click(function () {
@@ -239,7 +251,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next14').prop('disabled', false);
         $("#d5content14").hide();
-      }, 10000);
+      }, 1000);
     });
   
     $('#d5next15').click(function () {
@@ -249,7 +261,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next15').prop('disabled', false);
         $("#d5content15").hide();
-      }, 17000);
+      }, 1000);
     });
   
     $('#d5next16').click(function () {
@@ -259,7 +271,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next16').prop('disabled', false);
         $("#d5content16").hide();
-      }, 17000);
+      }, 1000);
     });
   
     $('#d5next17').click(function () {
@@ -269,7 +281,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next17').prop('disabled', false);
         $("#d5content17").hide();
-      }, 16000);
+      }, 1000);
     });
   
     $('#d5next18').click(function () {
@@ -279,17 +291,6 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#d5next18').prop('disabled', false);
         $("#d5content18").hide();
-      }, 15000);
+      }, 1000);
     });
-  
-    $('#d5next19').click(function () {
-      $(this).prop('disabled', true);
-      $("#d5content19").show();
-  
-      setTimeout(function () {
-        $('#d5next19').prop('disabled', false);
-        $("#d5content19").hide();
-      }, 15000);
-    });
-  
   });

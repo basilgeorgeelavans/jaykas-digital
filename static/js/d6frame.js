@@ -14,7 +14,7 @@
      document.getElementById('d6myVideo').play();
        inc=inc+1;
        document.getElementById("d6count").innerHTML ="         " + " Viewed : " + (inc) + " times";
-       if(inc == 6 ) {
+       if(inc == 4 ) {
         document.getElementById("d6task").hidden=false;
         document.getElementById("d6next").hidden=true;
         document.getElementById("d6hint").hidden=true;
@@ -47,7 +47,7 @@
     document.getElementById('d6myVideo2').play();
       inc=inc+1;
       document.getElementById("d6count2").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task2").hidden=false;
          document.getElementById("d6next2").hidden=true;
          document.getElementById("d6hint2").hidden=true;
@@ -81,7 +81,7 @@
     document.getElementById('d6myVideo3').play();
       inc=inc+1;
       document.getElementById("d6count3").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task3").hidden=false;
          document.getElementById("d6next3").hidden=true;
          document.getElementById("d6hint3").hidden=true;
@@ -115,7 +115,7 @@
     document.getElementById('d6myVideo4').play();
       inc=inc+1;
       document.getElementById("d6count4").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task4").hidden=false;
          document.getElementById("d6next4").hidden=true;
          document.getElementById("d6hint4").hidden=true;
@@ -149,7 +149,7 @@
     document.getElementById('d6myVideo5').play();
       inc=inc+1;
       document.getElementById("d6count5").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task5").hidden=false;
          document.getElementById("d6next5").hidden=true;
          document.getElementById("d6hint5").hidden=true;
@@ -183,7 +183,7 @@
     document.getElementById('d6myVideo6').play();
       inc=inc+1;
       document.getElementById("d6count6").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task6").hidden=false;
          document.getElementById("d6next6").hidden=true;
          document.getElementById("d6hint6").hidden=true;
@@ -217,7 +217,7 @@
     document.getElementById('d6myVideo7').play();
       inc=inc+1;
       document.getElementById("d6count7").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task7").hidden=false;
          document.getElementById("d6next7").hidden=true;
          document.getElementById("d6hint7").hidden=true;
@@ -251,7 +251,7 @@
     document.getElementById('d6myVideo8').play();
       inc=inc+1;
       document.getElementById("d6count8").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task8").hidden=false;
          document.getElementById("d6next8").hidden=true;
          document.getElementById("d6hint8").hidden=true;
@@ -285,7 +285,7 @@
     document.getElementById('d6myVideo9').play();
       inc=inc+1;
       document.getElementById("d6count9").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task9").hidden=false;
          document.getElementById("d6next9").hidden=true;
          document.getElementById("d6hint9").hidden=true;
@@ -319,7 +319,7 @@
     document.getElementById('d6myVideo10').play();
       inc=inc+1;
       document.getElementById("d6count10").innerHTML ="         " + " Viewed : " + (inc) + " times";
-      if(inc == 6 ) {
+      if(inc == 4 ) {
          document.getElementById("d6task10").hidden=false;
          document.getElementById("d6next10").hidden=true;
          document.getElementById("d6hint10").hidden=true;
